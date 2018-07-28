@@ -471,6 +471,12 @@ footer .submit {
 main {
     background-color: #ededed;
     padding-top: 100px;
+    background-image: url(../assets/blog-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+        padding-bottom: 100px;
+
+
 }
 
 .blogMain {
@@ -478,10 +484,7 @@ main {
     width: 66%;
     margin: 0 auto;
     padding: 30px;
-}
-
-.blogMain h5 {
-    font-size: 3.6rem;
+    margin-top: 425px;
 }
 
 .blogMain h6 {
@@ -490,13 +493,20 @@ main {
     margin: 0;
 }
 
+.blogMain h5 {
+    font-size: 3.6rem;
+    padding: 3% 15% 2% 15%;
+    line-height: 1.4;
+}
+
+
 .blogMain h5, 
 .blogMain .subheading {
     text-align: center;
 }
 
 .blogInfo {
-    padding-bottom: 20px;
+    padding: 40px 0 20px 0;
     border-bottom: solid 0.5px #d1d1d1;
 }
 
@@ -517,7 +527,7 @@ main {
 }
 
 .author img {
-    width: 15%;
+    width: 50px;
     border-radius: 50%;
     float: left;
 }
@@ -526,7 +536,7 @@ main {
 .author p {
     width: 60%;
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .date,
 .category,
@@ -540,9 +550,66 @@ main {
     font-weight: 400;
 }
 
+.blogSocial {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.blogSocial h6 {
+    display: inline;
+    padding-right: 10px;
+}
+
+.blogSocial i {
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #d1d1d1;
+}
+
+.blogSocial .fa-twitter:hover {
+    color: #0084b4;
+}
+
+.blogSocial .fa-instagram:hover {
+    color: #e95950;
+}
+
+.blogSocial .fa-facebook-f:hover {
+    color: #3B5998;
+}
+
+.blogSocial .fa-google-plus-g:hover {
+    color: #dd4b39;
+}
+
 .post {
     float: left;
     width: 32%;
+    box-shadow: 0px 1px 2px #d1d1d1;
+}
+
+.post:hover {
+    box-shadow: 0px 5px 15px gainsboro;
+}
+
+.postImage {
+    overflow: hidden;
+}
+
+.postImage img {
+    transition: transform 0.2s;
+}
+
+.post:hover > .postImage > img {
+    transform: scale(1.5);
+    filter: blur(0.5px);
+}
+
+.post:hover > .postText > h6 {
+    text-decoration: underline;
+}
+
+.post:hover > .postText > p:last-child {
+    color: black;
 }
 
 .post1 {
@@ -554,9 +621,14 @@ main {
 }
 
 .post h6 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 0;
     line-height: 1.3;
+}
+
+.postText {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .commentSection h4,
@@ -581,14 +653,26 @@ main {
     margin-left: 3%;
     float: left;
     padding: 1% 0 2% 2%;
+    position: relative;
+}
+
+.speechBubble {
+    border-bottom: solid 6px transparent;
+    border-top: solid 6px transparent;
+    border-left: solid 13px transparent;
+    border-right: solid 13px #ededed;
+    position: absolute;
+    top: 10px;
+    left: -26px;
+    z-index: 3;
 }
 
 .commentText p {
     margin: 3px;
-    color: #888888;
+    color: #777777;
 }
 
-.commentText p:first-child {
+.commentText .commentAuthor {
     color: black;
 }
 
@@ -602,6 +686,8 @@ main {
     font-weight: 400;
     font-style: italic;
 }
+
+
 
 .leaveAComment input,
 .leaveAComment textarea {
@@ -624,11 +710,22 @@ main {
 #commentComment {
     width: 100%;
     height: 200px;
+    margin-bottom: 40px;
 }
 
 input:required {
     box-shadow:none;
 }
+
+#commentSubmit {
+    background-color: olivedrab;
+    width: 150px;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 
 
