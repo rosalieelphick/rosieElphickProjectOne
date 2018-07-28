@@ -7,7 +7,7 @@
     <title>Sunshine Blog</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:600,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:600,300,400" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -60,6 +60,7 @@
                     <p>Hotel, magazine, top</p>
                 </div>
             </div> <!-- blogInfo ENDS -->
+
             <div class="blogContent">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae accusamus quidem incidunt tempore eveniet magnam provident saepe sit similique.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate excepturi rem molestiae voluptas blanditiis eos, nesciunt unde ipsa minus facilis fuga expedita nulla quibusdam quo quidem, quia velit? Explicabo.</p>
@@ -68,49 +69,74 @@
                 <div class="blogSocial">
                 </div>
             </div> <!-- blogContent ENDS -->
-            <div class="relatedPosts">
+
+            <div class="relatedPosts clearfix">
                 <h4>Related Posts</h4>
-                <div class="post">
+                <div class="post post1">
                     <img src="assets/blog-3.jpeg" alt="">
                     <p>June 24th, 2018</p>
-                    <h4>Five reasons to stay at the beautiful Sunshine Hotel</h4>
+                    <h6>Five reasons to stay at the beautiful Sunshine Hotel</h6>
                     <p>Continue</p>
                 </div>
-                <div class="post">
+                <div class="post post2">
                     <img src="assets/blog-3.jpeg" alt="">
                     <p>June 24th, 2018</p>
-                    <h4>Five reasons to stay at the beautiful Sunshine Hotel</h4>
+                    <h6>Five reasons to stay at the beautiful Sunshine Hotel</h6>
                     <p>Continue</p>
                 </div>
-                <div class="post">
+                <div class="post post3">
                     <img src="assets/blog-3.jpeg" alt="">
                     <p>June 24th, 2018</p>
-                    <h4>Five reasons to stay at the beautiful Sunshine Hotel</h4>
+                    <h6>Five reasons to stay at the beautiful Sunshine Hotel</h6>
                     <p>Continue</p>
                 </div> 
-                <div class="commentSection">
-                    <h4>02 Comments</h4>
-                    <div class="comment">
-                        <img src="assets/blog-6.jpeg" alt="">
-                        <div class="commentText">
-                            <p>Daniel Vandaft</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, earum.</p>
-                            <p>July 17, 2015 at 15 hours ago</p>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <img src="assets/blog-7.jpeg" alt="">
-                        <div class="commentText">
-                            <p>Jenifer Loopz</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, earum.</p>
-                            <p>July 17, 2015 at 15 hours ago</p>
-                        </div>
-                    </div>
-                </div> <!-- commentSection ENDS -->
-                <div class="leaveAComment">
-                    <h5>Leave A Comment</h5>
-                </div>
+                
             </div> <!-- relatedPosts ENDS -->
+
+            <div class="commentSection">
+
+                <h4>02 Comments</h4>
+
+                <div class="comment clearfix">
+                    <img src="assets/blog-6.jpeg" alt="">
+                    <div class="commentText">
+                        <p>Daniel Vandaft - <span class="reply">Reply</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, earum.</p>
+                        <p>July 17, 2015 at 15 hours ago</p>
+                    </div>
+                </div>
+
+                <div class="comment clearfix">
+                    <img src="assets/blog-7.jpeg" alt="">
+                    <div class="commentText clearfix">
+                        <p>Jenifer Loopz - <span class="reply">Reply</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, earum.</p>
+                        <p>July 17, 2015 at 15 hours ago</p>
+                    </div>
+                </div>
+
+            </div> <!-- commentSection ENDS -->
+
+            <div class="leaveAComment">
+                <h4>Leave A Comment</h4>
+                <form action="">
+                    <label for="commentName" class="visuallyHidden">Enter your name</label>
+                    <input type="text" id="commentName" placeholder="Enter your name..." required="true">
+
+                    <label for="commentEmail" class="visuallyHidden">Enter your email</label>
+                    <input type="text" id="commentEmail" placeholder="youremail@domain.com" required="true">
+
+                    <label for="commentSubject" class="visuallyHidden">Enter comment subject</label>
+                    <input type="text" id="commentSubject" placeholder="Subject (optional)">
+
+                    <!-- <label for="commentComment" class="visuallyHidden">Enter your comment here</label> -->
+                    <textarea name="commentComment" id="commentComment" placeholder="Here goes your comment"></textarea>
+
+                    <label for="commentSubmit" class="visuallyHidden">Submit comment</label>
+                    <input type="submit" id="commentSubmit">
+                </form>
+            </div>
+
         </div> <!-- blogMain ENDS -->
 
     </main>

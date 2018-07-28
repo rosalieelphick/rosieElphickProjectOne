@@ -84,6 +84,20 @@ header a {
     font-weight: 600;
 }
 
+.visuallyHidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 /* HEADER */
 
 header {
@@ -161,7 +175,7 @@ header li {
     background-image: url("../assets/home-1.jpeg");
     background-size: cover;
     /* height: 550px; */
-        height: 80vh;
+    height: 80vh;
     background-position: center;
 }
 
@@ -295,11 +309,6 @@ header li {
     font-size: 2.2rem;
 }
 
-
-
-
-
-
 .textBlack {
     color: black;
 }
@@ -307,10 +316,6 @@ header li {
 .clients i {
     font-size: 1.5rem;
 }
-
-/* .clients i:hover {
-    color: orange;
-} */
 
 .gallery {
     padding: 100px 0;
@@ -407,14 +412,14 @@ footer li {
     padding: 3px;
 }
 
-form {
+footer form {
     width: 100%;
     border-bottom: solid 1px #333333;
     margin-top: 20px;
     padding-bottom: 10px;
 }
 
-input[type="text"] {
+footer input[type="text"] {
     width: 80%;
     margin: 0;
     color: white;
@@ -426,7 +431,7 @@ input[type="text"] {
     
 }
 
-.submit {
+footer .submit {
     float: right;
     margin-top: 10px;
     background-color: #212020;
@@ -470,9 +475,9 @@ main {
 
 .blogMain {
     background-color: white;
-    width: 65%;
+    width: 66%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 .blogMain h5 {
@@ -490,22 +495,9 @@ main {
     text-align: center;
 }
 
-.author {
-    width: 50%;
-    float: left;
-}
-
-.author img {
-    width: 15%;
-    border-radius: 50%;
-    float: left;
-}
-
-.blogInfo h6,
-.blogInfo p {
-    width: 60%;
-    float: left;
-    margin-left: 20px;
+.blogInfo {
+    padding-bottom: 20px;
+    border-bottom: solid 0.5px #d1d1d1;
 }
 
 .blogInfo h6 {
@@ -515,14 +507,129 @@ main {
 .blogInfo p {
     margin-top: 2px;
     font-weight: 300;
+    display: block;
+    width: 100%;
 }
 
+.author {
+    width: 55%;
+    float: left;
+}
+
+.author img {
+    width: 15%;
+    border-radius: 50%;
+    float: left;
+}
+
+.author h6,
+.author p {
+    width: 60%;
+    float: left;
+    margin-left: 20px;
+}
 .date,
 .category,
 .tags {
-    width: 16%;
+    width: 15%;
     float: left;
 }
+
+.blogContent p:first-child {
+    color: black;
+    font-weight: 400;
+}
+
+.post {
+    float: left;
+    width: 32%;
+}
+
+.post1 {
+    margin-right: 2%;
+}
+
+.post3 {
+    margin-left: 2%;
+}
+
+.post h6 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.commentSection h4,
+.relatedPosts h4,
+.leaveAComment h4 {
+    border-bottom: solid 0.5px #d1d1d1;
+    padding-bottom: 15px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment img {
+    width: 50px;
+    float: left;
+}
+
+.commentText {
+    background-color: #ededed;
+    width: calc((100% - 50px) - 3%);
+    margin-left: 3%;
+    float: left;
+    padding: 1% 0 2% 2%;
+}
+
+.commentText p {
+    margin: 3px;
+    color: #888888;
+}
+
+.commentText p:first-child {
+    color: black;
+}
+
+.commentText p:last-child {
+    color: #999999;
+    font-weight: 300;
+}
+
+.commentText .reply {
+    color: turquoise;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.leaveAComment input,
+.leaveAComment textarea {
+    width: calc((100% - 45px)/3);
+    border: none;
+    border-bottom: solid 0.5px #d1d1d1;
+    padding: 10px 0 10px 0;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #999999;
+    resize: none;
+}
+
+#commentEmail {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#commentComment {
+    width: 100%;
+    height: 200px;
+}
+
+input:required {
+    box-shadow:none;
+}
+
 
 
 
