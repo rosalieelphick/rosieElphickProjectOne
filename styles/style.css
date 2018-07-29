@@ -97,7 +97,6 @@ header a {
     overflow: hidden;
 }
 
-
 /* HEADER */
 
 header {
@@ -171,12 +170,11 @@ header li {
 /* HERO  */
 
 .hero {
-    /* height: 80vh; */
+    height: 80vh;
     background-image: url("../assets/home-1.jpeg");
     background-size: cover;
-    /* height: 550px; */
-    height: 80vh;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* ABOUT US */
@@ -468,15 +466,13 @@ footer .submit {
 
 /* BLOG PAGE BLOG PAGE BLOG PAGE BLOG PAGE BLOG PAGE BLOG PAGE */
 
-main {
+ .mainContent {
     background-color: #ededed;
     padding-top: 100px;
     background-image: url(../assets/blog-1.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
-        padding-bottom: 100px;
-
-
+    padding-bottom: 100px;
 }
 
 .blogMain {
@@ -487,7 +483,8 @@ main {
     margin-top: 425px;
 }
 
-.blogMain h6 {
+.blogMain h6,
+.contactDetails h6 {
     font-family: 'Playfair Display', serif;
     text-transform: none;
     margin: 0;
@@ -688,10 +685,111 @@ main {
 }
 
 
+/* CONTACT PAGE CONTACT PAGE CONTACT PAGE CONTACT PAGE CONTACT PAGE  */
 
+.contactHero {
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heroTop {
+    background-image: url("../assets/contact-1.jpeg");
+}
+
+.heroBottom {
+    background-image: url("../assets/contact-2.jpeg");
+}
+
+.getInTouch {
+    padding-bottom: 50px;
+}
+
+.contactDetails {
+    margin-top: 75px;
+}
+
+.contactDetails p:nth-child(2),
+.getInTouch p:nth-child(2) {
+    padding-right: 50%;
+}
+
+.contactMethod {
+    width: 33%;
+    float: left;
+    padding: 30px 0 30px 40px;
+    margin: 20px 0;
+}
+
+.contactMethod i {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.contactMethod h6 {
+    margin-bottom: 15px;
+}
+
+.contactMethod p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contactPhone,
+.contactAddress {
+    border-right: solid 0.5px #d1d1d1;
+}
+
+/* FORMS FORMS FORMS FORMS FORMS FORMS FORMS FORMS FORMS FORMS*/
+
+/* fortmatting the placeholder text */
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #999999;
+}
+
+/* this makes the text black when writing */
+#commentName,
+#commentEmail,
+#commentSubject,
+#commentComment {
+    color: black;
+}
+
+/* defining width of divs */
+.commentName,
+.commentEmail,
+.commentSubject {
+    width: calc((100% - 40px)/3);
+    float: left;
+}
+
+.commentComment {
+    width: 100%;
+}
+
+#commentComment {
+    /* width: 100%; */
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.commentEmail {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input:required {
+    box-shadow:none;
+}
+
+/* defining width and style of inputs */
 .leaveAComment input,
 .leaveAComment textarea {
-    width: calc((100% - 45px)/3);
+    width: 100%;
     border: none;
     border-bottom: solid 0.5px #d1d1d1;
     padding: 10px 0 10px 0;
@@ -702,23 +800,33 @@ main {
     resize: none;
 }
 
-#commentEmail {
-    margin-left: 20px;
-    margin-right: 20px;
+.commentName,
+.commentEmail,
+.commentSubject {
+    position: relative;
 }
 
-#commentComment {
+.borderBottom {
+    height: 1px;
+    background-color: black;
+    width: 0;
+    position: absolute;
+    transition: width .3s;
+}
+
+#commentName:focus + .borderBottom,
+#commentEmail:focus + .borderBottom,
+#commentSubject:focus + .borderBottom {
     width: 100%;
-    height: 200px;
-    margin-bottom: 40px;
 }
 
-input:required {
-    box-shadow:none;
+#commentComment:focus {
+    border-bottom: solid 1px black;
 }
 
 #commentSubmit {
     background-color: olivedrab;
+    border: none;
     width: 150px;
     padding: 15px;
     color: white;
@@ -726,7 +834,13 @@ input:required {
     letter-spacing: 1px;
 }
 
-
-
-
+.getInTouch .leaveAComment #commentSubmit {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: solid 0.5px black;
+    width: 90px;
+}
 

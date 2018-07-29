@@ -34,7 +34,7 @@
         </ul>
     </header>
 
-    <main>
+    <main class="mainContent">
         <!-- <div class="beachBackground">
         </div> -->
 
@@ -141,22 +141,34 @@
             <div class="leaveAComment">
                 <h4>Leave A Comment</h4>
                 <form action="">
-                    <label for="commentName" class="visuallyHidden">Enter your name</label>
-                    <input type="text" id="commentName" placeholder="Enter your name..." required="true">
+                    <div class="commentName">
+                        <label for="commentName" class="visuallyHidden">Enter your name</label>
+                        <input type="text" id="commentName" placeholder="Enter your name..." required="true">    
+                        <div class="borderBottom"></div>
+                    </div>
 
-                    <label for="commentEmail" class="visuallyHidden">Enter your email</label>
-                    <input type="text" id="commentEmail" placeholder="youremail@domain.com" required="true">
+                    <div class="commentEmail">
+                        <label for="commentEmail" class="visuallyHidden">Enter your email</label>
+                        <input type="text" id="commentEmail" placeholder="youremail@domain.com" required="true">
+                        <div class="borderBottom"></div>
+                    </div>
 
-                    <label for="commentSubject" class="visuallyHidden">Enter comment subject</label>
-                    <input type="text" id="commentSubject" placeholder="Subject (optional)">
-
-                    <!-- <label for="commentComment" class="visuallyHidden">Enter your comment here</label> -->
-                    <textarea name="commentComment" id="commentComment" placeholder="Here goes your comment"></textarea>
+                    <div class="commentSubject">
+                        <label for="commentSubject" class="visuallyHidden">Enter comment subject</label>
+                        <input type="text" id="commentSubject" placeholder="Subject (optional)">
+                        <div class="borderBottom"></div>
+                    </div>
+                    
+                    <div class="commentComment">
+                        <textarea name="commentComment" id="commentComment" placeholder="Here goes your comment"></textarea>
+                    </div>
 
                     <label for="commentSubmit" class="visuallyHidden">Submit comment</label>
-                    <input type="submit" id="commentSubmit" value="Send Messager">
+                    <input type="submit" id="commentSubmit" value="Send Message">
+
                 </form>
-            </div>
+            </div> <!-- leaveAComment ENDS -->
+            
 
         </div> <!-- blogMain ENDS -->
 
