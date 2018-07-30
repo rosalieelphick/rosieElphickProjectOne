@@ -78,11 +78,6 @@ p {
     line-height: 2;
 }
 
-header a {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
 
 .visuallyHidden:not(:focus):not(:active) {
     position: absolute;
@@ -113,6 +108,17 @@ header ul {
 
 header li {
     float: left;
+}
+
+header a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+header a:hover {
+    color: #d1d1d1;
 }
 
 .headerLeft, 
@@ -274,12 +280,7 @@ header li {
 /* TESTIMONIAL EXPLORE  */
 
 .testimonialExplore {
-    background-image: radial-gradient(circle at 100% 150%, whitesmoke 24%, white 25%, white 28%, whitesmoke 29%, whitesmoke 36%, white 36%, white 40%, transparent 40%, transparent),
-    radial-gradient(circle at 0    150%, whitesmoke 24%, white 25%, white 28%, whitesmoke 29%, whitesmoke 36%, white 36%, white 40%, transparent 40%, transparent),
-    radial-gradient(circle at 50%  100%, white 10%, whitesmoke 11%, whitesmoke 23%, white 24%, white 30%, whitesmoke 31%, whitesmoke 43%, white 44%, white 50%, whitesmoke 51%, whitesmoke 63%, white 64%, white 71%, transparent 71%, transparent),
-    radial-gradient(circle at 100% 50%, white 5%, whitesmoke 6%, whitesmoke 15%, white 16%, white 20%, whitesmoke 21%, whitesmoke 30%, white 31%, white 35%, whitesmoke 36%, whitesmoke 45%, white 46%, white 49%, transparent 50%, transparent),
-    radial-gradient(circle at 0    50%, white 5%, whitesmoke 6%, whitesmoke 15%, white 16%, white 20%, whitesmoke 21%, whitesmoke 30%, white 31%, white 35%, whitesmoke 36%, whitesmoke 45%, white 46%, white 49%, transparent 50%, transparent);
-    background-size:50px 25px;
+    background-image: url(../assets/backgroundImage.png);
     padding-top: 100px;
     text-align: center;
 }
@@ -289,6 +290,23 @@ header li {
     padding: 8% 15%;
     margin: 1%;
     box-shadow: 0px -2px 30px gainsboro;
+    position: relative;
+}
+
+.arrows i {
+    font-size: 5rem;
+}
+
+.arrows .fa-angle-left {
+    position: absolute;
+    left: -100px;
+    top: 45%;
+}
+
+.arrows .fa-angle-right {
+    position: absolute;
+    right: -100px;
+    top: 45%;
 }
 
 .clients .quote {
@@ -311,7 +329,7 @@ header li {
     color: black;
 }
 
-.clients i {
+.stars i {
     font-size: 1.5rem;
 }
 
@@ -392,6 +410,11 @@ footer {
 footer a {
     color: #999999;
     font-size: 1.4rem;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: white;
 }
 
 footer p {
@@ -518,19 +541,19 @@ footer .submit {
     width: 100%;
 }
 
-.author {
+.blogAuthor {
     width: 55%;
     float: left;
 }
 
-.author img {
+.blogAuthor img {
     width: 50px;
     border-radius: 50%;
     float: left;
 }
 
-.author h6,
-.author p {
+.blogAuthor h6,
+.blogAuthor p {
     width: 60%;
     float: left;
     margin-left: 10px;
@@ -581,11 +604,11 @@ footer .submit {
 .post {
     float: left;
     width: 32%;
-    box-shadow: 0px 1px 2px #d1d1d1;
+    box-shadow: 0px 1px 0px 0px #e6e6e6;
 }
 
 .post:hover {
-    box-shadow: 0px 5px 15px gainsboro;
+    box-shadow: 1px 14px 20px -15px grey;
 }
 
 .postImage {

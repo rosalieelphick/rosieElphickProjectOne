@@ -13,25 +13,28 @@
 <body>
 
     <header class="clearfix wrapper">
-        <ul class="headerLeft">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Reserve</a></li>
-        </ul>
-        <div class="logo">
-            <h1>Sunshine</h1>
-        </div>
-        <ul class="headerRight">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href=""><i class="fas fa-search"></i></a></li>
-            <li class="cart">
-                <a href="#"><i class="fas fa-shopping-bag"></i></a>
-                <div class="cartNumber">
-                    <p>2</p>
-                </div>
-            </li>
-        </ul>
+        <nav>
+
+            <ul class="headerLeft">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Reserve</a></li>
+            </ul>
+            <div class="logo">
+                <h1>Sunshine</h1>
+            </div>
+            <ul class="headerRight">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+                <li class="cart">
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    <div class="cartNumber">
+                        <p>2</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="mainContent">
@@ -42,7 +45,7 @@
             <h5>Sunshine Hotel in top 5 best hotel from TripAdvisor magazine</h5>
             <p class="subheading" >Home > Blog > <span class="textBlack">Sunshine hotel in top 5 best hotel from TripAdvisor magazine</span></p>
             <div class="blogInfo clearfix">
-                <div class="author clearfix">
+                <div class="blogAuthor clearfix">
                     <img src="assets/blog-2.jpeg" alt="">
                     <h6>Alex Furguson</h6>  
                     <p>Admin</p>
@@ -200,8 +203,10 @@
                     <div class="footerRight">
                         <p>Sign up for our newsletter</p>
                         <form class="clearfix">
-                            <input type="text" placeholder="Your email...">
-                            <input type="submit" class="submit" value="">
+                            <label for="footerEmail" class="visuallyHidden"></label>
+                            <input type="text" placeholder="Your email..." id="footerEmail" name="footerEmail">
+                            <label for="footerSubmit" class="visuallyHidden"></label>
+                            <input type="submit" id="footerSubmit" name ="footerSubmit" class="submit" value="">
                         </form>
                     </div>
         
