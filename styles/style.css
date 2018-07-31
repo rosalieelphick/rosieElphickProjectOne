@@ -4,7 +4,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
-/* BASE FONT STYLES */
+/* BASE STYLES */
 html {
     font-size: 45%;
     font-family: 'Poppins', sans-serif;
@@ -16,8 +16,25 @@ img {
     display: block;
 }
 
+h3,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    width: 61%;
+    margin: 0 auto;
+}
+
 ul {
     padding-left: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 a {
@@ -25,21 +42,12 @@ a {
     color: black;
 }
 
-.wrapper {
-    width: 61%;
-    margin: 0 auto;
-}
-
-li {
-    list-style-type: none;
-}
 
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 5rem;
-    margin: 0;
+    margin: 10px 0 0 0;
     text-align: center;
-    margin-top: 10px;
 }
 
 h2 {
@@ -50,7 +58,7 @@ h2 {
 h3 {
     text-transform: uppercase;
     font-size: 1.4rem;
-    margin: 0;
+    /* margin: 0; */
     text-align: center;
     letter-spacing: 5px;
     color: #999999;
@@ -64,7 +72,6 @@ h4 {
 h5 {
     font-family: 'Playfair Display', serif;
     font-size: 4.8rem;  
-    margin: 0;
 }
 
 h6 {
@@ -101,8 +108,6 @@ header {
 }
 
 header ul {
-    margin: 0;
-    padding: 0;
     margin: 25px 0;
 }
 
@@ -143,7 +148,6 @@ header a:hover {
 }
 
 .headerRight li {
-    display: block;
     margin-left: 40px;
 }
 
@@ -175,12 +179,12 @@ header a:hover {
 
 /* HERO  */
 
-.hero {
-    height: 80vh;
+.hero { 
     background-image: url("../assets/home-1.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 80vh;
 }
 
 /* ABOUT US */
@@ -221,12 +225,12 @@ header a:hover {
 
 .topBar {
     width: 75px;
-    height: 2px;
+    height: 1.5px;
     background-color:black;
     margin-bottom: 30px;
 }
 
-.author {
+.textBlack {
     color: black;
     font-weight: 600;
 }
@@ -240,13 +244,13 @@ header a:hover {
 }
 
 .amenitiesText ul {
-    width: 60%;
+    width: 66%;
     float: right;
     margin-top: 70px;
 }
 
 .amenitiesText li {
-    width: 47%;
+    width: 50%;
     float: left;
     margin-bottom: 30px;
 }
@@ -261,20 +265,18 @@ header a:hover {
 
 .amenities i {
     font-size: 2.5rem;
-    display: block;
     float: left;
     color: #333333;
 }
 
 .amenities h6 {
-    margin: 0;
     color: #333333;
 }
 
 .amenitiesItem {
     width: 80%;
     float: left;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 /* TESTIMONIAL EXPLORE  */
@@ -289,12 +291,13 @@ header a:hover {
     background-color: white;
     padding: 8% 15%;
     margin: 1%;
-    box-shadow: 0px -2px 30px gainsboro;
+    box-shadow: -2px 7px 10px -8px gainsboro;
     position: relative;
 }
 
 .arrows i {
     font-size: 5rem;
+    transition: color 0.3s;
 }
 
 .arrows .fa-angle-left {
@@ -307,6 +310,10 @@ header a:hover {
     position: absolute;
     right: -100px;
     top: 45%;
+}
+
+.arrows i:hover {
+    color: grey;
 }
 
 .clients .quote {
@@ -373,7 +380,7 @@ header a:hover {
 }
 
 .lightGrey {
-    color: lightgrey;
+    color: #d1d1d1;
 }
 
 .emailBold {
@@ -395,10 +402,7 @@ footer {
     float: left;
 }
 
-.footerLeft {
-    width: 30%;
-}
-
+.footerLeft,
 .footerCentre {
     width: 30%;
 }
@@ -448,8 +452,7 @@ footer input[type="text"] {
     border: 0;
     padding: 5px 5px 5px 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    
+    font-size: 1.4rem;   
 }
 
 footer .submit {
@@ -464,8 +467,7 @@ footer .submit {
 
 .footerMain {
     border-bottom: solid 1px #333333;
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding: 30px 0 50px 0;
 }
 
 .footerSocial {
@@ -487,7 +489,7 @@ footer .submit {
     color: white;
 }
 
-/* BLOG PAGE BLOG PAGE BLOG PAGE BLOG PAGE BLOG PAGE BLOG PAGE */
+/* BLOG PAGE*/
 
  .mainContent {
     background-color: #ededed;
@@ -506,6 +508,26 @@ footer .submit {
     margin-top: 425px;
 }
 
+.blogTitle {
+    text-align: center;
+}
+
+.blogTitle a,
+.blogTitle p {
+    display: inline;
+}
+
+.blogTitle a {
+    font-size: 1.4rem;
+    color: #999999;
+    line-height: 2;
+    transition: color 0.3s;
+}
+
+.blogTitle a:hover {
+    color: black;
+}
+
 .blogMain h6,
 .contactDetails h6 {
     font-family: 'Playfair Display', serif;
@@ -517,12 +539,6 @@ footer .submit {
     font-size: 3.6rem;
     padding: 3% 15% 2% 15%;
     line-height: 1.4;
-}
-
-
-.blogMain h5, 
-.blogMain .subheading {
-    text-align: center;
 }
 
 .blogInfo {
@@ -558,6 +574,7 @@ footer .submit {
     float: left;
     margin-left: 10px;
 }
+
 .date,
 .category,
 .tags {
@@ -574,6 +591,7 @@ footer .submit {
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
 .blogSocial h6 {
     display: inline;
     padding-right: 10px;
@@ -611,25 +629,14 @@ footer .submit {
     box-shadow: 1px 14px 20px -15px grey;
 }
 
-.postImage {
-    overflow: hidden;
-}
-
-.postImage img {
-    transition: transform 0.2s;
-}
-
-.post:hover > .postImage > img {
-    transform: scale(1.5);
-    filter: blur(0.5px);
-}
 
 .post:hover > .postText > h6 {
     text-decoration: underline;
 }
 
-.post:hover > .postText > p:last-child {
+.post:hover > .postText > a {
     color: black;
+    font-weight: 600;
 }
 
 .post1 {
@@ -640,15 +647,23 @@ footer .submit {
     margin-left: 2%;
 }
 
+
+.postText {
+    padding: 0 15px;
+}
+
 .post h6 {
     font-size: 1.7rem;
     margin: 0;
     line-height: 1.3;
 }
 
-.postText {
-    padding-left: 15px;
-    padding-right: 15px;
+.postText a {
+    font-size: 1.4rem;
+    color: #999999;
+    line-height: 2;
+    display: block;
+    padding: 15px 0;
 }
 
 .commentSection h4,
@@ -677,8 +692,8 @@ footer .submit {
 }
 
 .speechBubble {
-    border-bottom: solid 6px transparent;
-    border-top: solid 6px transparent;
+    border-bottom: solid 5px transparent;
+    border-top: solid 5px transparent;
     border-left: solid 13px transparent;
     border-right: solid 13px #ededed;
     position: absolute;
@@ -707,9 +722,7 @@ footer .submit {
     font-style: italic;
 }
 
-
-/* CONTACT PAGE CONTACT PAGE CONTACT PAGE CONTACT PAGE CONTACT PAGE  */
-
+/* CONTACT */
 .contactHero {
     height: 55vh;
     background-size: cover;
@@ -764,7 +777,7 @@ footer .submit {
     border-right: solid 0.5px #d1d1d1;
 }
 
-/* FORMS FORMS FORMS FORMS FORMS FORMS FORMS FORMS FORMS FORMS*/
+/* FORMS/
 
 /* fortmatting the placeholder text */
 ::placeholder {
@@ -795,7 +808,6 @@ footer .submit {
 }
 
 #commentComment {
-    /* width: 100%; */
     height: 200px;
     margin-bottom: 40px;
 }
@@ -830,11 +842,16 @@ input:required {
 }
 
 .borderBottom {
-    height: 1px;
+    height: 1.5px;
     background-color: black;
     width: 0;
     position: absolute;
     transition: width .3s;
+    z-index: 3;
+}
+
+#commentComment:focus + .borderBottom {
+    width: 100%;
 }
 
 #commentName:focus + .borderBottom,
@@ -844,7 +861,7 @@ input:required {
 }
 
 #commentComment:focus {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1.5px black;
 }
 
 #commentSubmit {

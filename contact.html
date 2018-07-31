@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
     <header class="clearfix wrapper">
         <nav>
             <ul class="headerLeft">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Reserve</a></li>
-            </ul>
+            </ul> <!-- headerLeft ENDS -->
             <div class="logo">
                 <h1>Sunshine</h1>
             </div>
@@ -31,17 +30,13 @@
                         <p>2</p>
                     </div>
                 </li>
-            </ul>
+            </ul> <!-- headerRight ENDS -->
         </nav>
     </header>
-
     <main>
-
         <section class="contactHero heroTop">     
         </section>
-
         <div class="wrapper">
-
             <div class="contactDetails clearfix">
                 <h5>Contact details</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum quae deserunt optio eius natus cum! Dicta id libero laboriosam</p>
@@ -61,59 +56,44 @@
                     <h6>Email</h6>
                     <p>support@sunshine.com</p>
                     <p>hello@sunshine.com</p>
-                </div>
-            
-            </div> <!-- contactDetails ENDS -->
-            
-            
+                </div>     
+            </div> <!-- contactDetails ENDS -->      
             <div class="getInTouch">
                 <h5>Get in touch with us</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore amet voluptate in magnam aspernatur.</p>
                 <div class="leaveAComment">
-                    <form action="">
+                    <form action="leaveComment.php" method="POST" name="contactCommentForm">
                         <div class="commentName">
                             <label for="commentName" class="visuallyHidden">Enter your name</label>
                             <input type="text" id="commentName" placeholder="Enter your name..." required="true">
                             <div class="borderBottom"></div>
                         </div>
-                
                         <div class="commentEmail">
                             <label for="commentEmail" class="visuallyHidden">Enter your email</label>
                             <input type="text" id="commentEmail" placeholder="youremail@domain.com" required="true">
                             <div class="borderBottom"></div>
-                        </div>
-                
+                        </div>           
                         <div class="commentSubject">
                             <label for="commentSubject" class="visuallyHidden">Enter comment subject</label>
                             <input type="text" id="commentSubject" placeholder="Subject (optional)">
                             <div class="borderBottom"></div>
                         </div>
-                
                         <div class="commentComment">
+                            <label for="commentComment" class="visuallyHidden">Enter comment here</label>
                             <textarea name="commentComment" id="commentComment" placeholder="Here goes your comment"></textarea>
                         </div>
-                
                         <label for="commentSubmit" class="visuallyHidden">Submit comment</label>
                         <input type="submit" id="commentSubmit" value="Send Message">
-                
                     </form>
-                </div> <!-- leaveAComment ENDS -->
-                
-            </div> <!-- getInTouch ENDS -->
-             
+                </div> <!-- leaveAComment ENDS -->              
+            </div> <!-- getInTouch ENDS -->  
         </div> <!-- wrapper ENDS -->
-
         <section class="contactHero heroBottom">
         </section>
-
     </main>
-
-
     <footer>
         <div class="wrapper">
-    
             <div class="footerMain clearfix">
-    
                 <div class="footerLeft">
                     <ul>
                         <li><a href="#">Site Map</a></li>
@@ -122,8 +102,7 @@
                         <li><a href="#">Help</a></li>
                         <li><a href="#">Affiliate</a></li>
                     </ul>
-                </div>
-    
+                </div> <!-- footerLeft ENDS -->
                 <div class="footerCentre">
                     <ul>
                         <li><a href="#">FAQs</a></li>
@@ -131,21 +110,17 @@
                         <li><a href="#">Location</a></li>
                         <li><a href="#">Press</a></li>
                     </ul>
-                </div>
-    
+                </div> <!-- footerCentre ENDS -->
                 <div class="footerRight">
                     <p>Sign up for our newsletter</p>
-                    <form class="clearfix">
+                    <form action="signUp.php" method="POST" name="footerForm" class="clearfix">
                         <label for="footerEmail" class="visuallyHidden"></label>
                         <input type="text" placeholder="Your email..." id="footerEmail" name="footerEmail">
                         <label for="footerSubmit" class="visuallyHidden"></label>
                         <input type="submit" id="footerSubmit" name ="footerSubmit " class="submit" value="">
                     </form>
-                </div>
-    
-            </div>
-            <!-- footerMain ENDS -->
-    
+                </div> <!-- footerRight ENDS -->
+            </div><!-- footerMain ENDS -->
             <div class="footerSocial clearfix">
                 <p>&#169 2018 Sunshine Hotel</p>
                 <div class="socialIcons">
@@ -153,10 +128,8 @@
                     <a href=""><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
                 </div>
-            </div>
-    
+            </div> <!-- footerSocial ENDS -->
         </div> <!-- footer wrapper ENDS -->
-    </footer>
-    
+    </footer> 
 </body>
 </html>
