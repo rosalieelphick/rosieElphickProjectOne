@@ -1,4 +1,0 @@
-Fonts
-Poppins (Google Fonts)
-Playfair Display (Google Fonts)
-Font Awesome (https://fontawesome.com/)
